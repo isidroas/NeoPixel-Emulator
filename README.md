@@ -1,7 +1,7 @@
 # NeoPixel-Emulator
 ## TODO
-- remove matrix
-- script
-- title
+- [X] remove matrix
+- [X] script
+- [X] title
 - calculate pixel size to acomodate width and number
-- close que window with  keyboard
+- extend long strip in a square? like my room
