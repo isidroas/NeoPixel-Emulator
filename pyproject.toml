@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "neopixel_emulator"
+version = "0.0.1"
+dependencies = [
+    'pyglet',
+]
+
+[tool.setuptools]
+py-modules=["neopixel_emulator"]
