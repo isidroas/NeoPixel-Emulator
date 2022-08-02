@@ -11,4 +11,4 @@ dependencies = [
 ]
 
 [tool.setuptools]
-py-modules=["neopixel_emulator"]
+packages=["neopixel_emulator"]
