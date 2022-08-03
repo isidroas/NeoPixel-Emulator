@@ -5,4 +5,4 @@
 - [X] title
 - [X] calculate pixel size to acomodate width and number
 - [ ] extend long strip in a square? like my room
-- [ ] Packaging
+- [X] Packaging

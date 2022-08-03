@@ -7,8 +7,8 @@ CHIP_IMAGE = Path(__file__).parent / "ws2812b.png"
 CIRCLE_IMAGE = Path(__file__).parent / "circle.png"
 
 class NeoPixelEmulator(pyglet.window.Window):
-    def __init__(self, window_w=1765, window_h=400, **kwargs):
-        super().__init__(**kwargs)
+    def __init__(self, resizable=True, caption='neopixel-emulator'):
+        super().__init__(resizable=resizable, caption=caption)
         self.batch = pyglet.graphics.Batch()
         self.sprites = []
         self.color_sprites = []
@@ -28,7 +28,6 @@ class NeoPixelEmulator(pyglet.window.Window):
                     y=int(self.height/2),
                     group=self.led_group,
                 )
-            print( led_width/ sprite_chip.width)
             sprite_chip.scale = led_width/ sprite_chip.width
             self.sprites.append(
                 sprite_chip
